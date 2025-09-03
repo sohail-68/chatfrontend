@@ -26,7 +26,7 @@ export const ChatMessagesProvider = ({ children }) => {
 
   const fetchSuggestedUsers = async () => {
     try {
-      const response = await axios.get('http://localhost:5001/api/auth/getfolow', {
+      const response = await axios.get('https://chatgrammain.onrender.com/api/auth/getfolow', {
         headers: {
           Authorization: token,
         },
