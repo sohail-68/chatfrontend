@@ -15,7 +15,7 @@ const ChangePassword = () => {
   const SubPass = async () => {
     try {
       const response = await axios.put(
-        "http://localhost:5001/api/auth/changepass",
+        "https://chatgrammain.onrender.com/api/auth/changepass",
         {
           currentPassword: password.oldpass,
           newPassword: password.newpass,
